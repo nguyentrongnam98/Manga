@@ -1,0 +1,321 @@
+.SideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background: #262f3d;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.ListLogo {
+  padding: 10px 10px !important;
+}
+.LogoContainer {
+  display: flex;
+  align-items: center;
+}
+.LogoContainer h2 {
+  margin: 0;
+}
+.Logo {
+  height: 42px;
+  margin-right: 20px;
+}
+.LogoText {
+  font-size: 20px;
+}
+.MenuIcon {
+  cursor: pointer;
+  font-size: 26px;
+  position: fixed;
+  left: 30px;
+  top: 17px;
+  z-index: 305;
+  display: none;
+}
+.ItemHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.SideBar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.SideBar ul li {
+  border-bottom: 1px solid #4d4d4d;
+  padding: 20px;
+  cursor: pointer;
+}
+.SideBar ul li.AccountProfileImage {
+  padding: 0;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.ProfilePic {
+  height: 100%;
+  min-width: 62px;
+  /* margin-right: 10px; */
+  background-size: cover;
+  background-position: center;
+}
+.DisplayName {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.DisplayNameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+.DisplayNameText {
+  position: relative;
+  z-index: 10;
+}
+.Arrow {
+  transform: rotate(0);
+  transition: transform 0.5s;
+}
+.ArrowDown {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+.ArrowRight {
+  transform: rotate(-90deg);
+  transition: transform 0.5s;
+}
+.FlexCenter {
+  display: flex;
+}
+.Hover {
+  transition: background 0.2s;
+}
+.Hover:hover {
+  background: #313c4e;
+  transition: background 0.2s;
+}
+.Hover:hover .ListText,
+.AccountLink:hover .ListText {
+  left: 5px;
+  transition: left 0.3s;
+}
+.Selected {
+  background: #313c4e;
+}
+.FlexRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.UserIcon {
+  font-size: 24px;
+  color: #1a8cff;
+}
+.LogoutLink {
+  font-style: italic;
+  font-size: 12px;
+  /* margin-top: 3px; */
+  /* position: absolute; */
+}
+.LogoutLink a {
+  color: #a6a6a6;
+}
+.NavIcon {
+  font-size: 20px;
+}
+.NavIconTv {
+  font-size: 16px;
+}
+.CalendarIcon {
+  font-size: 20px;
+}
+.ListIcon {
+  width: 40px;
+  min-width: 40px;
+}
+.ListIconAccount {
+  min-height: 40px;
+}
+.ListText {
+  position: relative;
+  left: 0;
+  transition: left 0.3s;
+}
+.CreateAccount {
+  cursor: pointer;
+}
+.SearchHeading {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+.Search {
+  /* margin: 0; */
+  height: 0;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.SearchOpen {
+  /* margin: 20px 0 10px 0; */
+  height: 50px;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: flex-end;
+  background: #313c4e;
+}
+.SearchClicked {
+  background: #313c4e;
+}
+.SearchChevron {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.SignIn {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s linear;
+}
+.SignInOpen {
+  height: 160px;
+  transition: height 0.3s linear;
+}
+.FavWatchlist {
+  padding: 0 !important;
+}
+.FavWatchHeading {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.FavWatchInnerHeading {
+  width: 100%;
+  padding-right: 20px;
+  position: relative;
+}
+.FavWatchChevron {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.FavIcon {
+  font-size: 18px;
+  color: #ff1a66;
+}
+.FavoritesWatch {
+  max-height: 0;
+  margin: 0;
+  background: #313c4e;
+  overflow-y: scroll;
+  scrollbar-color: #1a8cff #262f3d;
+  scrollbar-width: thin;
+}
+.FavoritesWatch::-webkit-scrollbar {
+  width: 7px;
+  background: #262f3d;
+}
+.FavoritesWatch::-webkit-scrollbar-thumb {
+  background: #1a8cff;
+}
+.FavoritesWatchOpen {
+  padding: 0 0 20px 0 !important;
+  height: 100%;
+  max-height: 235px;
+  transition: max-height 0.3s linear;
+}
+.FavoritesWatch li {
+  padding: 5px 0 !important;
+  border-bottom: none !important;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+}
+.FavoritesWatch li img {
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.FavWatchActive {
+  background: #313c4e;
+}
+.StarIcon {
+  color: #ffcc00;
+  font-size: 18px;
+}
+.Favs {
+  position: fixed;
+  left: -10px;
+  width: 250px;
+  z-index: 99;
+  top: 0;
+  transition: left 0.3s linear;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #313c4e;
+}
+.FavsShow {
+  left: 250px;
+}
+.StreamingIcon {
+  height: 24px;
+}
+@media (max-width: 1090px) {
+  .Favs {
+    position: fixed;
+    left: -310px;
+    width: 300px;
+    top: 60px;
+    height: calc(100% - 60px);
+  }
+  .FavsShow {
+    left: 0;
+  }
+  .SideBar {
+    left: -310px;
+    top: 60px;
+    transition: left 0.3s ease-out;
+    width: 300px;
+  }
+  .SideBarSlideIn {
+    left: 0;
+    transition: left 0.3s ease-in;
+  }
+  .MenuIcon {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .FavsShow {
+    left: 0;
+  }
+  .SideBar ul li {
+    font-size: 14px;
+  }
+}

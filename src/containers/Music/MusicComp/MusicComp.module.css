@@ -1,0 +1,63 @@
+.Movie {
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+a {
+  margin: 10px;
+}
+.Movie .Poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-size: contain;
+}
+.Movie .Poster img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-height: 300px;
+}
+@media (max-width: 1420px) {
+  .Movie {
+    width: 250px;
+  }
+  .Movie .Poster {
+    height: 250px;
+  }
+}
+@media (max-width: 1220px) {
+  .Movie {
+    width: 200px;
+  }
+  .Movie .Poster {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .Movie {
+    width: 150px;
+  }
+  .Movie .Poster {
+    height: 150px;
+  }
+}
+@media (max-width: 630px) {
+  .Movie {
+    width: 100%;
+  }
+  .Movie .Poster {
+    height: initial;
+  }
+}
+@media (max-width: 500px) {
+  .Movie {
+    height: initial;
+  }
+  .Movie .Poster {
+    height: initial;
+    background-size: contain !important;
+  }
+}

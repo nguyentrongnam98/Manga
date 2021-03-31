@@ -1,0 +1,46 @@
+.MovieDetails {
+  width: 100%;
+  padding: 10px 3px 0 3px;
+  box-sizing: border-box;
+  color: #ccc;
+}
+.MovieDetails .Title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.MovieDetails .ReleaseDate {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: lighter;
+}
+.MovieDetails .Summary {
+  margin-bottom: 5px;
+}
+.Rating {
+  font-style: normal;
+}
+.ScoresOverride {
+  font-size: 14px !important;
+}
+@media (max-width: 1366px) {
+  .MovieDetails .Title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .MovieDetails {
+    height: initial;
+  }
+  .Scores {
+    display: none;
+  }
+  .Rating {
+    display: none;
+  }
+  .MovieDetails .ReleaseDate {
+    display: none;
+  }
+}

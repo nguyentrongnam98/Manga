@@ -1,0 +1,73 @@
+.AlbumThumbContainer {
+  position: relative;
+  margin: 10px;
+  max-width: 200px;
+}
+.AlbumTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ReleaseDate {
+  font-weight: lighter;
+  font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.AlbumThumb {
+  width: 200px;
+  min-height: 245px;
+  min-width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.AlbumThumb img {
+  width: 100%;
+}
+.AlbumSelected {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 560px) {
+  .AlbumThumbContainer {
+    width: 75px;
+  }
+  .AlbumThumbContainer {
+    position: relative;
+    margin: 10px;
+    max-width: initial;
+  }
+  .AlbumThumb {
+    width: 75px;
+    min-height: 112px;
+    min-width: initial;
+  }
+  .AlbumThumb img {
+    width: 75px;
+  }
+  .AlbumTitle,
+  .ReleaseDate {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .Movie {
+    width: 44%;
+    height: initial;
+    margin: 0;
+  }
+  .Movie .Poster {
+    height: initial;
+    background-size: contain !important;
+  }
+}

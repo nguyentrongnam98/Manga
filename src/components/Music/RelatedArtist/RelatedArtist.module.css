@@ -1,0 +1,48 @@
+.Thumb {
+  margin: 10px;
+  cursor: pointer;
+}
+.ThumbContainer {
+  height: 200px;
+  width: 200px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+.Pic {
+  width: 100%;
+}
+.Name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.CharacterName {
+  font-size: 14px;
+  font-style: italic;
+}
+@media (max-width: 1410px) {
+  .Pic {
+    max-width: 150px;
+  }
+  .ThumbContainer {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 560px) {
+  a {
+    margin: 10px;
+  }
+  .Thumb {
+    margin: 0;
+  }
+  .Pic {
+    width: 100%;
+    max-width: initial;
+  }
+  .ThumbContainer {
+    width: initial;
+    height: initial;
+  }
+}

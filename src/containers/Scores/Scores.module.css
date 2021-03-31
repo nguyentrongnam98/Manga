@@ -1,0 +1,55 @@
+.Scores {
+  margin-top: 3px;
+  display: flex;
+}
+.Score {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 16px;
+}
+.ImdbIcon {
+  height: 30px;
+  margin-right: 5px;
+}
+.RtIcon {
+  height: 22px;
+  margin-right: 5px;
+}
+.McIcon {
+  height: 22px;
+  margin-right: 5px;
+}
+@media (max-width: 500px) {
+  .Scores {
+    font-weight: normal;
+
+    /* flex-direction: column; */
+
+    /* justify-content: center; */
+
+    /* padding: 5px;
+    margin: 0;
+    box-sizing: border-box; */
+  }
+  .Scores img {
+    width: initial !important;
+  }
+  .Score {
+    margin-bottom: 5px;
+    font-size: 14px;
+    /* margin-right: 0; */
+  }
+  .ImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .ImdbIcon {
+    height: 20px;
+    position: relative;
+    /* right: 2px; */
+    /* top: 1px; */
+  }
+}

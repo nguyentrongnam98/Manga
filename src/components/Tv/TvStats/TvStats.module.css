@@ -1,0 +1,196 @@
+.MovieStats {
+  padding: 30px 10px;
+  display: flex;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.Collection {
+  font-size: 18px;
+  max-width: 300px;
+  width: 300px;
+  margin-right: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+}
+.PartOfCollection {
+  font-size: 16px;
+}
+.CollectionName {
+  font-weight: bold;
+}
+.MobileLastEpisode {
+  display: none;
+}
+.LastEpisodeAirDate,
+.LastEpisodeSeason {
+  font-size: 14px;
+  font-style: italic;
+  color: #ccc;
+}
+.LastEpisodeSeason {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.LastEpisodeOverview {
+  margin: 10px 0 5px 0;
+  font-size: 14px;
+  color: #ccc;
+  max-height: 80px;
+  overflow-x: hidden;
+  max-height: 58px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #262f3d #0f1318;
+}
+.LastEpisodeOverview::-webkit-scrollbar {
+  background-color: #0f1318;
+}
+.LastEpisodeOverview::-webkit-scrollbar-thumb {
+  background-color: #262f3d;
+}
+.CollectionPoster {
+  flex-grow: 1;
+  max-width: 300px;
+}
+.CollectionPosterMobile {
+  display: none;
+}
+.Stats1 {
+  width: 100%;
+}
+.Row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.Label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.Value {
+  color: #ccc;
+}
+.Row .Value a {
+  color: #66b3ff;
+}
+.Tagline {
+  font-size: 32px;
+  font-style: italic;
+}
+.NetworkLogo {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.HomePage {
+  word-break: break-all;
+}
+.LastEpisodeTablet {
+  display: none;
+}
+.Tablet {
+  display: none;
+}
+@media (max-width: 768px) {
+  .MovieStats {
+    font-size: 16px;
+    flex-direction: column-reverse;
+  }
+  .Tagline {
+    font-size: 22px;
+  }
+  .Collection {
+    font-size: 16px;
+    width: initial;
+    max-width: initial;
+    max-height: 200px;
+    height: 200px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .Collection {
+    flex-direction: column;
+    height: initial;
+    max-height: initial;
+    flex-wrap: nowrap;
+  }
+  .CollectionPoster {
+    min-width: 300px;
+  }
+  .CollectionName {
+    margin: 0;
+  }
+  .Row {
+    margin-bottom: 5px;
+  }
+  .Stats1 {
+    margin-bottom: 20px;
+  }
+  .LastEpisodeTablet {
+    display: block;
+    margin-left: 20px;
+  }
+  .LastEpisodeOverview {
+    display: none;
+  }
+  .Tablet {
+    display: block;
+  }
+  .LastEpisode {
+    display: none;
+  }
+  .PartOfCollection {
+    font-size: 14px;
+  }
+  .LastEpisodeAirDate {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .LastEpisodeTablet {
+    display: none;
+  }
+  .LastEpisodeOverview {
+    display: block;
+  }
+  .CollectionPoster {
+    display: none;
+  }
+  .CollectionPosterMobile {
+    display: block;
+    margin-right: 20px;
+    max-width: 250px;
+  }
+  .NetworkLogo {
+    margin-left: 8px;
+  }
+  .Collection {
+    flex-direction: column;
+  }
+  .CollectionPosterMobile {
+    min-width: 100%;
+  }
+  .Stats1 {
+    margin-bottom: 20px;
+    margin-left: 8px;
+  }
+  .MobileLastEpisode {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .MobileLastEpisode .LastEpisodeAirDate,
+  .MobileLastEpisode .LastEpisodeSeason {
+    margin-bottom: 0;
+  }
+  .LastEpisode {
+    display: none;
+  }
+}
